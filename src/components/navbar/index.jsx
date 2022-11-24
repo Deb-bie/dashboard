@@ -1,10 +1,6 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import {FaStream} from "react-icons/fa"
-import {BsPersonCircle} from "react-icons/bs"
-// import Logo from "../../assets/logo/logo.png"
-import SideData from "../../data/sidebarData"
-
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
@@ -68,7 +64,7 @@ const Navbar = () => {
 
                     <div className="item  flex items-center mr-[20px] relative">
                         <img
-                            src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            src="https://images.pexels.com/photos/13143554/pexels-photo-13143554.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt=""
                             className="w-[30px] h-[30px] rounded-[50%]  "
                         />

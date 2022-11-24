@@ -13,9 +13,9 @@ const Dashboard = () => {
         <Navbar />
         <div className="w-[100%] px-4 gap-4 grid 4xs:grid-cols-1 2xs:grid-cols-2 lg:grid-cols-4 ">
           <Widget type="user" />
+          <Widget type="product" />
           <Widget type="order" />
           <Widget type="earning" />
-          <Widget type="balance" />
         </div>
         <div className="w-[100%] my-4 px-4 gap-4 grid 4xs:grid-cols-1 lg:grid-cols-2">
           <Featured />

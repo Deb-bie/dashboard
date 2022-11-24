@@ -5,11 +5,11 @@ import {MdCategory} from "react-icons/md"
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import StoreIcon from "@mui/icons-material/Store";
-import InsertChartIcon from "@mui/icons-material/InsertChart";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
+import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 import { DarkModeContext } from "../../context/darkModeContext";
 
 
@@ -46,11 +46,11 @@ const Sidebar = () => {
                                 <p className="title text-[10px] font-bold text-[#999] mt-[15px] mb-[5px] ">LISTS</p>
                                 <NavLink to="/products"  style={({ isActive }) => isActive ? activeStyle : undefined}>
                                     <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff] ">
-                                        <StoreIcon className="text-[18px] text-[#7451f8] " />
+                                        <ShoppingCartOutlinedIcon className="text-[18px] text-[#7451f8] " />
                                     </li>
                                 </NavLink>
 
-                                <NavLink to="/category"  style={({ isActive }) => isActive ? activeStyle : undefined}>
+                                <NavLink to="#"  style={({ isActive }) => isActive ? activeStyle : undefined}>
                                     <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff] ">
                                         <MdCategory className="text-[18px] text-[#7451f8] " />
                                     </li>
@@ -64,11 +64,11 @@ const Sidebar = () => {
                             
                                 <p className="title text-[10px] font-bold text-[#999] mt-[15px] mb-[5px]">USEFUL</p>
                                 <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff] ">
-                                    <InsertChartIcon className="text-[18px] text-[#7451f8] "/>
+                                    <ReceiptLongIcon className="text-[18px] text-[#7451f8] "/>
                                 </li>
                                 
                                 <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff] ">
-                                    <NotificationsNoneIcon className="text-[18px] text-[#7451f8] " />
+                                    <MonetizationOnOutlinedIcon className="text-[18px] text-[#7451f8] " />
                                 </li>
 
                                 <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff] ">
@@ -116,12 +116,12 @@ const Sidebar = () => {
                                 <p className="title text-[10px] font-bold text-[#999] mt-[15px] mb-[5px] ">LISTS</p>
                                 <NavLink to="/products"  style={({ isActive }) => isActive ? activeStyle : undefined}>
                                     <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff] ">
-                                        <StoreIcon className="text-[18px] text-[#7451f8] " />
+                                        <ShoppingCartOutlinedIcon className="text-[18px] text-[#7451f8] " />
                                         <span className="text-[13px] font-bold text-[#888] ml-[10px]  " >Products</span>
                                     </li>
                                 </NavLink>
 
-                                <NavLink to="/category"  style={({ isActive }) => isActive ? activeStyle : undefined}>
+                                <NavLink to="#"  style={({ isActive }) => isActive ? activeStyle : undefined}>
                                     <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff] ">
                                         <MdCategory className="text-[18px] text-[#7451f8] " />
                                         <span className="text-[13px] font-bold text-[#888] ml-[10px]  ">Categories</span>
@@ -137,12 +137,12 @@ const Sidebar = () => {
                             
                                 <p className="title text-[10px] font-bold text-[#999] mt-[15px] mb-[5px]">USEFUL</p>
                                 <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff] ">
-                                    <InsertChartIcon className="text-[18px] text-[#7451f8] "/>
+                                    <ReceiptLongIcon className="text-[18px] text-[#7451f8] "/>
                                     <span className="text-[13px] font-bold text-[#888] ml-[10px]  " >Orders</span>
                                 </li>
                                 
                                 <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff] ">
-                                    <NotificationsNoneIcon className="text-[18px] text-[#7451f8] " />
+                                    <MonetizationOnOutlinedIcon className="text-[18px] text-[#7451f8] " />
                                     <span className="text-[13px] font-bold text-[#888] ml-[10px]  " >Transactions</span>
                                 </li>
 

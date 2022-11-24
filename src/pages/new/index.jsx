@@ -2,8 +2,6 @@ import "./new.scss";
 import Sidebar from "../../components/sidebar";
 import Navbar from "../../components/navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
-import { useState } from "react";
-
 const New = ({title, inputs} ) => {
 
     return (

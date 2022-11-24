@@ -1,8 +1,8 @@
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
+import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 
 import "./widget.scss"
 
@@ -37,7 +37,7 @@ const Widget = ({ type }) => {
                 isMoney: false,
                 link: "View all orders",
                 icon: (
-                    <ShoppingCartOutlinedIcon
+                    <ReceiptLongIcon
                         className="icon text-[18px] p-[5px] rounded-[5px] self-end "
                         style={{
                             backgroundColor: "rgba(218, 165, 32, 0.2)",
@@ -48,13 +48,13 @@ const Widget = ({ type }) => {
             };
         break;
         
-        case "earning":
+        case "product":
             data = {
-                title: "EARNINGS",
-                isMoney: true,
-                link: "View net earnings",
+                title: "PRODUCTS",
+                isMoney: false,
+                link: "View all products",
                 icon: (
-                    <MonetizationOnOutlinedIcon
+                    <ShoppingCartOutlinedIcon
                         className="icon text-[18px] p-[5px] rounded-[5px] self-end "
                         style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }}
                     />
@@ -62,13 +62,13 @@ const Widget = ({ type }) => {
             }      
         break;
         
-        case "balance":
+        case "earning":
             data = {
-                title: "BALANCE",
+                title: "EARNINGS",
                 isMoney: true,
-                link: "See details",
+                link: "View total earnings",
                 icon: (
-                    <AccountBalanceWalletOutlinedIcon
+                    <MonetizationOnOutlinedIcon
                         className="icon text-[18px] p-[5px] rounded-[5px] self-end "
                         style={{
                             backgroundColor: "rgba(128, 0, 128, 0.2)",
